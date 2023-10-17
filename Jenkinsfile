@@ -8,7 +8,7 @@ node ('ubuntu-appserver-cweb-2140') {
     stage('Build-and-Tag') {
         /* This builds the actual image;
          * This is synonymous to docker build on the command line */
-        app = docker.build("patrick612/realestateweb")
+        app = docker.build("patrick612/realestatewebhw2")
     }
 
     stage('Post-to-dockerhub') {
